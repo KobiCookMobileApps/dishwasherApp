@@ -26,18 +26,22 @@ class DishwasherCollectionViewCell: UICollectionViewCell {
     }
     
     
-    
     func configure(with dishwasher: Dishwasher) {
         titleLabel.text = dishwasher.title
         priceLabel.text = "00.00"
         
-        
-        let url = URL(string: "https:" + dishwasher.image)
-        guard let data = try? Data(contentsOf: url!) else {
-            return
+        DispatchQueue.global(qos: .userInitiated).async {
+            let url = URL(string: "https:" + dishwasher.image)
+            guard let data = try? Data(contentsOf: url!) else {
+                return
+            }
+            let imageData = UIImage(data: data)
+            
+            DispatchQueue.main.async {
+                self.imageView.image = imageData
+            }
         }
-        let imageData = UIImage(data: data)
-        self.imageView.image = imageData
+       
         
     }
 
