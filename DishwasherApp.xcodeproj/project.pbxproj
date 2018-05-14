@@ -15,6 +15,9 @@
 		848E333F20A9D627003E82C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848E333D20A9D627003E82C6 /* LaunchScreen.storyboard */; };
 		848E334A20A9D627003E82C6 /* DishwasherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E334920A9D627003E82C6 /* DishwasherAppTests.swift */; };
 		848E335520A9D627003E82C6 /* DishwasherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E335420A9D627003E82C6 /* DishwasherAppUITests.swift */; };
+		848E336820A9DF5F003E82C6 /* Dishwasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E336720A9DF5F003E82C6 /* Dishwasher.swift */; };
+		848E336A20A9E0C6003E82C6 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E336920A9E0C6003E82C6 /* ProductService.swift */; };
+		848E336C20A9EE60003E82C6 /* DishwasherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E336B20A9EE60003E82C6 /* DishwasherCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		848E335020A9D627003E82C6 /* DishwasherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DishwasherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		848E335420A9D627003E82C6 /* DishwasherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishwasherAppUITests.swift; sourceTree = "<group>"; };
 		848E335620A9D627003E82C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848E336720A9DF5F003E82C6 /* Dishwasher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dishwasher.swift; sourceTree = "<group>"; };
+		848E336920A9E0C6003E82C6 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		848E336B20A9EE60003E82C6 /* DishwasherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishwasherCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +108,8 @@
 				848E336420A9D63D003E82C6 /* Model */,
 				848E336320A9D639003E82C6 /* View */,
 				848E336220A9D631003E82C6 /* Controller */,
-				848E336520A9D642003E82C6 /* SupportingFiles */,
+				848E336520A9D642003E82C6 /* Service */,
 				848E334020A9D627003E82C6 /* Info.plist */,
-				848E333820A9D626003E82C6 /* DishwasherApp.xcdatamodeld */,
 			);
 			path = DishwasherApp;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				848E333520A9D626003E82C6 /* Main.storyboard */,
+				848E336B20A9EE60003E82C6 /* DishwasherCollectionViewCell.swift */,
 				848E333B20A9D627003E82C6 /* Assets.xcassets */,
 			);
 			path = View;
@@ -147,17 +153,20 @@
 		848E336420A9D63D003E82C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				848E333820A9D626003E82C6 /* DishwasherApp.xcdatamodeld */,
+				848E336720A9DF5F003E82C6 /* Dishwasher.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		848E336520A9D642003E82C6 /* SupportingFiles */ = {
+		848E336520A9D642003E82C6 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				848E336920A9E0C6003E82C6 /* ProductService.swift */,
 				848E333120A9D626003E82C6 /* AppDelegate.swift */,
 				848E333D20A9D627003E82C6 /* LaunchScreen.storyboard */,
 			);
-			path = SupportingFiles;
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,8 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				848E333420A9D626003E82C6 /* ViewController.swift in Sources */,
+				848E336820A9DF5F003E82C6 /* Dishwasher.swift in Sources */,
+				848E336C20A9EE60003E82C6 /* DishwasherCollectionViewCell.swift in Sources */,
 				848E333220A9D626003E82C6 /* AppDelegate.swift in Sources */,
 				848E333A20A9D626003E82C6 /* DishwasherApp.xcdatamodeld in Sources */,
+				848E336A20A9E0C6003E82C6 /* ProductService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
