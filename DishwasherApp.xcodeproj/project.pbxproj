@@ -99,11 +99,10 @@
 		848E333020A9D626003E82C6 /* DishwasherApp */ = {
 			isa = PBXGroup;
 			children = (
-				848E333120A9D626003E82C6 /* AppDelegate.swift */,
-				848E333320A9D626003E82C6 /* ViewController.swift */,
-				848E333520A9D626003E82C6 /* Main.storyboard */,
-				848E333B20A9D627003E82C6 /* Assets.xcassets */,
-				848E333D20A9D627003E82C6 /* LaunchScreen.storyboard */,
+				848E336420A9D63D003E82C6 /* Model */,
+				848E336320A9D639003E82C6 /* View */,
+				848E336220A9D631003E82C6 /* Controller */,
+				848E336520A9D642003E82C6 /* SupportingFiles */,
 				848E334020A9D627003E82C6 /* Info.plist */,
 				848E333820A9D626003E82C6 /* DishwasherApp.xcdatamodeld */,
 			);
@@ -126,6 +125,39 @@
 				848E335620A9D627003E82C6 /* Info.plist */,
 			);
 			path = DishwasherAppUITests;
+			sourceTree = "<group>";
+		};
+		848E336220A9D631003E82C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				848E333320A9D626003E82C6 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		848E336320A9D639003E82C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				848E333520A9D626003E82C6 /* Main.storyboard */,
+				848E333B20A9D627003E82C6 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		848E336420A9D63D003E82C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		848E336520A9D642003E82C6 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				848E333120A9D626003E82C6 /* AppDelegate.swift */,
+				848E333D20A9D627003E82C6 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
