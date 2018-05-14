@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 struct ApiResponse: Decodable {
@@ -18,5 +19,6 @@ struct Dishwasher: Decodable {
     
     let title: String
     let price: [String:String]
+    let image: String
     
 }

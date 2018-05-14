@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 typealias ProductHandler = ([Dishwasher]) -> Void
@@ -17,7 +18,7 @@ struct ProductAPI {
     private static let base = "https://api.johnlewis.com/v1/"
     
     static var products: String {
-        return "\(base)products/search?q=dishwasher&key=\(key)"
+        return base + "products/search?q=dishwasher&key=" + key
     }
 }
 
@@ -47,6 +48,7 @@ class ProductService {
             
             do {
                 let response = try JSONDecoder().decode(ApiResponse.self, from: jsonData)
+                print(response.products)
                 completion(response.products)
             } catch let e as Error {
                 print (e.localizedDescription)
@@ -58,6 +60,7 @@ class ProductService {
         
     }
     
+    }
     
     
-}
+
