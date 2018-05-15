@@ -35,22 +35,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="389" height="499"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="YDm-uq-jN3">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YDm-uq-jN3">
                                                     <rect key="frame" x="0.0" y="20" width="389" height="469"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Qh-4x-tLV">
-                                                            <rect key="frame" x="0.0" y="0.0" width="389" height="364"/>
-                                                            <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Qh-4x-tLV">
+                                                            <rect key="frame" x="0.0" y="0.0" width="389" height="291"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDC-ll-7Ed">
-                                                            <rect key="frame" x="0.0" y="394" width="389" height="23.5"/>
-                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDC-ll-7Ed">
+                                                            <rect key="frame" x="0.0" y="321" width="389" height="29"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biB-qO-RRv">
-                                                            <rect key="frame" x="0.0" y="447.5" width="389" height="23.5"/>
-                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                            <rect key="frame" x="0.0" y="380" width="389" height="29"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -61,8 +60,8 @@
                                         <constraints>
                                             <constraint firstItem="YDm-uq-jN3" firstAttribute="leading" secondItem="aZh-Hl-Wjg" secondAttribute="leading" id="Apz-1c-iqE"/>
                                             <constraint firstAttribute="trailing" secondItem="YDm-uq-jN3" secondAttribute="trailing" id="alV-ys-kIK"/>
-                                            <constraint firstAttribute="bottom" secondItem="YDm-uq-jN3" secondAttribute="bottom" constant="20" id="k0L-bz-hno"/>
-                                            <constraint firstItem="YDm-uq-jN3" firstAttribute="top" secondItem="aZh-Hl-Wjg" secondAttribute="top" constant="8" id="wNY-aW-flj"/>
+                                            <constraint firstAttribute="bottom" secondItem="YDm-uq-jN3" secondAttribute="bottom" constant="80" id="k0L-bz-hno"/>
+                                            <constraint firstItem="YDm-uq-jN3" firstAttribute="top" secondItem="aZh-Hl-Wjg" secondAttribute="top" constant="10" id="wNY-aW-flj"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="imageView" destination="8Qh-4x-tLV" id="cs5-Cf-EgN"/>
